@@ -1,0 +1,62 @@
+.navigation li{
+    display: inline-block;
+    padding: 3% 5% 0% 5%;
+}
+.options ul{
+    text-align: center;
+    width: 100%;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.navigation{
+    }
+.landing{
+    background: url(./back.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+@keyframes fadein{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+}
+.landing h1{
+    color: white;
+}
+.landingText{
+    position: relative;
+    top: 15%;
+    left: 4%;
+}
+.landing h5{
+    color: rgb(110, 243, 199);
+}
+.landing li{
+    display: inline-block;
+}
+.landingProd{
+    position: relative;
+    top: 40%;
+    left: 5%;
+    -webkit-animation: fadein 2s;
+}
+.landingProd img{
+    margin: 50px 10px 0px 10px;
+    border: 3px solid rgb(110, 243, 199);
+    padding: 6%;
+    border-radius: 10%;
+}
+.hide{
+    display: none;
+}
+.landingProd img:hover{
+    background-color: aquamarine;
+}
