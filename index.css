@@ -12,13 +12,19 @@
     font-weight: 600;
 }
 .navigation{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(230, 229, 194, 0.534);
+    box-shadow: 1px 1px 1px 1px rgb(177, 177, 177);
+    border-radius: 10%;
     }
 .landing{
-    background: url(./back.jpg) no-repeat;
+    background: url(./images/back.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 600px;
     width: 100%;
+    transition-duration: 0.5s;
 }
 @keyframes fadein{
 from{
@@ -59,4 +65,41 @@ to{
 }
 .landingProd img:hover{
     background-color: aquamarine;
+}
+
+.cctv{
+ background: url(./images/cctv01.jpg) no-repeat;
+ background-position: center;
+ background-size: cover;
+ transition-duration: 0.7s;
+}
+.door{
+    background: url(./images/door.jpg);
+    background-size: cover;
+    transition-duration: 0.7s;
+    background-position: center;
+}
+.telephone{
+    background: url(./images/tele.jpg);
+    background-size: cover;
+    transition-duration: 0.7s;
+    background-position: center;
+}
+.wifi{
+    background: url(./images/wifi.jpg);
+    background-size: cover;
+    transition-duration: 0.7s;
+    background-position: center;
+}
+.scan{
+    background: url(./images/scan.jpg);
+    background-size: cover;
+    transition-duration: 0.7s;
+    background-position: center;
+}
+.elect{
+    background: url(./images/elect.jpg);
+    background-size: cover;
+    transition-duration: 0.7s;
+    background-position: center;
 }
