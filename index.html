@@ -14,30 +14,37 @@
 
 <body>
 
-    <div class="navigation">
-        <div class="row">
-            <div class="col-lg-3 d-flex justify-content-center"><img src="./images/wirem.png" alt="" height="90px">
-            </div>
-            <div class="col-lg-7">
-                <div class="options d-flex justify-content-center">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-2 d-flex justify-content-center"><button style="width: 80px; height: 50px;border: 3px solid aquamarine;font-weight: 650;" type="button"
-                    class="btn btn-outline-info mt-2">Login</button>
-            </div>
-        </div>
-    </div>
+    
 
-    <div style="height: 90px;
-    background-color:white
-    "></div>
+    <header>
+        
+        <nav class="nav">
+          <a href="/" class="logo"><img src="./images/wirem.png" alt="" height="90px"></a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <div class="options">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div style="height: 7vw;"></div>
+
+
+
+   
     <div id="lands" onmouseover="modes('products')" onmouseleave="modes('productsdel')" class="landing">
         <div class="landingText">
             <h1>Feel Your Home Safer</h1>
@@ -47,16 +54,20 @@
             <h3 style="color: black; border: 2px solid rgb(110, 243, 199);display: inline;padding: 2%;">Our Products
             </h3><br>
             <ul onmouseleave="backChange('original')">
-                <li><a onmouseover="backChange('cctv')" id="cctv" href="#"><img src="./images/cctv.svg" alt=""></a></li>
-                <li><a onmouseover="backChange('door')" id="door" href="#"><img src="./images/doorlock.svg" alt=""></a>
+                <li><a onmouseleave="backChangeDel('cctv')" onmouseover="backChange('cctv')" id="cctv" href="#"><img
+                            src="./images/cctv.svg" alt=""></a></li>
+                <li><a onmouseleave="backChangeDel('door')" onmouseover="backChange('door')" id="door" href="#"><img
+                            src="./images/doorlock.svg" alt=""></a>
                 </li>
-                <li><a onmouseover="backChange('electric')" id="electric" href="#"><img src="./images/electric.svg"
-                            alt=""></a></li>
-                <li><a onmouseover="backChange('scan')" id="scan" href="#"><img src="./images/scaner.svg" alt=""></a>
+                <li><a onmouseleave="backChangeDel('elect')" onmouseover="backChange('elect')" id="electric"
+                        href="#"><img src="./images/electric.svg" alt=""></a></li>
+                <li><a onmouseleave="backChangeDel('scan')" onmouseover="backChange('scan')" id="scan" href="#"><img
+                            src="./images/scaner.svg" alt=""></a>
                 </li>
-                <li><a onmouseover="backChange('telephone')" id="telephone" href="#"><img src="./images/telephonic.svg"
-                            alt=""></a></li>
-                <li><a onmouseover="backChange('wifi')" id="wifi" href="#"><img src="./images/wifi.svg" alt=""></a></li>
+                <li><a onmouseleave="backChangeDel('telephone')" onmouseover="backChange('telephone')" id="telephone"
+                        href="#"><img src="./images/telephonic.svg" alt=""></a></li>
+                <li><a onmouseleave="backChangeDel('wifi')" onmouseover="backChange('wifi')" id="wifi" href="#"><img
+                            src="./images/wifi.svg" alt=""></a></li>
             </ul>
         </div>
         <div style="margin-left: 10%;position: relative;top: 40%;" id="products01">
